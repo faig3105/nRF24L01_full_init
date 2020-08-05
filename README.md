@@ -15,4 +15,4 @@ Code is not complete there'slot's  work todo. For example with IRQ pin, it shoul
 
 
 
-There's "void on_packet(uint8_t * buf, uint8_t size)" fuction in "main.c" which is called when data packet is received. Use it to parse the received message (add there your own code) or to print it for debugging.
+/*b There's "void on_packet(uint8_t * buf, uint8_t size)" fuction in "main.c" which is called when data packet is received. Use it to parse the received message (add there your own code) or to print it for debugging./*b
