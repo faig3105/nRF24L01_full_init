@@ -9,8 +9,6 @@
 #define CE_PORT GPIOC
 #define CSN_PORT CE_PORT
 #define RADIO_IRQ_PORT GPIOB
-//#define RADIO_DDR //DDRD
-//#define RADIO_PIN //PIND
 
 #define RADIO_CE GPIO_PIN_8 //2
 #define RADIO_CSN GPIO_PIN_9 //1
@@ -188,36 +186,6 @@
 #define csn_assert HAL_GPIO_WritePin(CSN_PORT, RADIO_CSN, RESET)
 #define csn_deassert HAL_GPIO_WritePin(CSN_PORT, RADIO_CSN, SET)
 
-
-// Выбирает активное состояние (высокий уровень) на линии CE
-// void radio_assert_ce();
-//{
-//  //RADIO_PORT |= (1 << RADIO_CE); // Установка высокого уровня на линии CE
-//  HAL_GPIO_WritePin(RADIO_PORT, RADIO_CE, SET);
-//}
-
-// Выбирает неактивное состояние (низкий уровень) на линии CE
-// void radio_deassert_ce();
-//{
-//  //RADIO_PORT &= ~(1 << RADIO_CE); // Установка низкого уровня на линии CE
-//  HAL_GPIO_WritePin(RADIO_PORT, RADIO_CE, RESET);
-//}
-
-// Поскольку функции для работы с csn не предполагается использовать в иных файлах, их можно объявить static
-
-// Выбирает активное состояние (низкий уровень) на линии CSN
-//  void csn_assert();
-//{
-//  //RADIO_PORT &= ~(1 << RADIO_CSN); // Установка низкого уровня на линии CSN
-//	HAL_GPIO_WritePin(RADIO_PORT, RADIO_CSN, RESET);
-//}
-
-// Выбирает неактивное состояние (высокий уровень) на линии CSN
-//  void csn_deassert();
-//{
-//  //RADIO_PORT |= (1 << RADIO_CSN); // Установка высокого уровня на линии CSN
-//  HAL_GPIO_WritePin(RADIO_PORT, RADIO_CSN, SET);
-//}
 
 
 void radio_port_init();
