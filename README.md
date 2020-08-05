@@ -1,5 +1,5 @@
 # nRF24L01_full_init
-nRF24L01 driver optimized for stm32 MCU's with FULL INITIALIZATION CODE, which is crucial for these radio modules. 
+# nRF24L01 driver optimized for stm32 MCU's with FULL INITIALIZATION CODE, which is crucial for these radio modules. 
 All existing registers (even if you don't need to change them) are being initialized on every startup and every time you push reset button on the microcontroller, otherwise they may be PRETTY unstable.
 
 Original driver is written for AVR MCU's and is's source code was taken from here "http://aterlux.ru/article/nrf24l01p". Huge thanks to it's author!!!
