@@ -10,3 +10,9 @@ For stm32 devices there's no need in base module for nRF24L01. So you have to co
 And no additional capacitors are needed if you use this init code.
 
 Code is not complete there'slot's  work todo. For example with IRQ pin, it should be used through callback function.
+
+
+
+
+
+There's "void on_packet(uint8_t * buf, uint8_t size)" fuction in "main.c" which is called when data packet is received. Use it to parse the received message (add there your own code) or to print it for debugging.
