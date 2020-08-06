@@ -102,7 +102,7 @@ int main(void)
   sprintf(text,"Board init ok \r\n");
   HAL_UART_Transmit(&huart2, (uint8_t*)text, strlen(text), 1000);
 
-  radio_init();
+  radio_port_init();
   while (!radio_init())
   {HAL_Delay(1000);}
 
